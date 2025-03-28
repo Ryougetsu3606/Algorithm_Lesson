@@ -9,7 +9,7 @@
 
 # USTC-210072. Algorithm Design and Analysis_Lab code
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+_Welcome :D_
 
 </header>
 
