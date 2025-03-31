@@ -1,228 +1,146 @@
-// This file implements an AVL Tree, a self-balancing binary search tree.
-// The AVL Tree ensures that the height difference (balance factor) between
-// the left and right subtrees of any node is at most 1, maintaining O(log n)
-// time complexity for insertion, deletion, and search operations.
-
 #include <iostream>
-#include <algorithm>
 using namespace std;
 
-class AVLTree {
+// Node structure for the binary search tree
+class TreeNode {
+public:
+    double value; // Value of the node
+    TreeNode* left; // Pointer to the left child
+    TreeNode* right; // Pointer to the right child
+
+    // Constructor to initialize a node
+    TreeNode(double val) : value(val), left(nullptr), right(nullptr) {}
+};
+
+// Binary Search Tree class
+class BinarySearchTree {
 private:
-    // Node structure representing a single node in the AVL Tree.
-    struct Node {
-        double key;       // The key value stored in the node.
-        Node* left;       // Pointer to the left child.
-        Node* right;      // Pointer to the right child.
-        int height;       // Height of the node in the tree.
-        Node(double k) : key(k), left(nullptr), right(nullptr), height(1) {}
-    };
+    TreeNode* root; // Root of the tree
 
-    Node* root; // Pointer to the root node of the AVL Tree.
-
-    // Helper function to get the height of a node.
-    int getHeight(Node* node) {
-        return node ? node->height : 0;
-    }
-
-    // Helper function to calculate the balance factor of a node.
-    int getBalanceFactor(Node* node) {
-        return node ? getHeight(node->left) - getHeight(node->right) : 0;
-    }
-
-    // Performs a right rotation on the given node.
-    Node* rotateRight(Node* y) {
-        Node* x = y->left;
-        Node* T2 = x->right;
-
-        // Perform rotation.
-        x->right = y;
-        y->left = T2;
-
-        // Update heights.
-        y->height = max(getHeight(y->left), getHeight(y->right)) + 1;
-        x->height = max(getHeight(x->left), getHeight(x->right)) + 1;
-
-        return x; // Return the new root after rotation.
-    }
-
-    // Performs a left rotation on the given node.
-    Node* rotateLeft(Node* x) {
-        Node* y = x->right;
-        Node* T2 = y->left;
-
-        // Perform rotation.
-        y->left = x;
-        x->right = T2;
-
-        // Update heights.
-        x->height = max(getHeight(x->left), getHeight(x->right)) + 1;
-        y->height = max(getHeight(y->left), getHeight(y->right)) + 1;
-
-        return y; // Return the new root after rotation.
-    }
-
-    // Recursive function to insert a key into the AVL Tree.
-    Node* insert(Node* node, double key) {
-        if (!node) return new Node(key); // Create a new node if the tree is empty.
-
-        // Traverse the tree to find the correct position for the new key.
-        if (key < node->key)
-            node->left = insert(node->left, key);
-        else if (key > node->key)
-            node->right = insert(node->right, key);
-        else
-            return node; // Duplicate keys are not allowed.
-
-        // Update the height of the current node.
-        node->height = 1 + max(getHeight(node->left), getHeight(node->right));
-
-        // Get the balance factor to check if the node is unbalanced.
-        int balance = getBalanceFactor(node);
-
-        // Perform rotations to balance the tree.
-        if (balance > 1 && key < node->left->key)
-            return rotateRight(node);
-        if (balance < -1 && key > node->right->key)
-            return rotateLeft(node);
-        if (balance > 1 && key > node->left->key) {
-            node->left = rotateLeft(node->left);
-            return rotateRight(node);
+    // Helper function to insert a value into the tree
+    TreeNode* insert(TreeNode* node, double value) {
+        if (node == nullptr) {
+            return new TreeNode(value); // Create a new node if the current node is null
         }
-        if (balance < -1 && key < node->right->key) {
-            node->right = rotateRight(node->right);
-            return rotateLeft(node);
+        if (value <= node->value) {
+            node->left = insert(node->left, value); // Insert into the left subtree
+        } else {
+            node->right = insert(node->right, value); // Insert into the right subtree
         }
-
-        return node; // Return the unchanged node pointer.
+        return node;
     }
 
-    // Helper function to find the node with the smallest key in a subtree.
-    Node* minValueNode(Node* node) {
-        Node* current = node;
-        while (current->left)
-            current = current->left;
-        return current;
+    // Helper function to search for a value in the tree
+    bool search(TreeNode* node, double value) {
+        if (node == nullptr) {
+            return false; // Value not found
+        }
+        if (node->value == value) {
+            return true; // Value found
+        }
+        if (value < node->value) {
+            return search(node->left, value); // Search in the left subtree
+        } else {
+            return search(node->right, value); // Search in the right subtree
+        }
     }
 
-    // Recursive function to delete a key from the AVL Tree.
-    Node* deleteNode(Node* root, double key) {
-        if (!root) return root; // Base case: the tree is empty.
+    // Helper function to find the minimum value node in a subtree
+    TreeNode* findMin(TreeNode* node) {
+        while (node->left != nullptr) {
+            node = node->left; // Move to the leftmost node
+        }
+        return node;
+    }
 
-        // Traverse the tree to find the node to be deleted.
-        if (key < root->key)
-            root->left = deleteNode(root->left, key);
-        else if (key > root->key)
-            root->right = deleteNode(root->right, key);
-        else {
-            // Node with only one child or no child.
-            if (!root->left || !root->right) {
-                Node* temp = root->left ? root->left : root->right;
-                if (!temp) {
-                    temp = root;
-                    root = nullptr;
-                } else
-                    *root = *temp; // Copy the contents of the non-empty child.
-                delete temp;
-            } else {
-                // Node with two children: Get the inorder successor.
-                Node* temp = minValueNode(root->right);
-                root->key = temp->key; // Copy the inorder successor's key.
-                root->right = deleteNode(root->right, temp->key); // Delete the successor.
+    // Helper function to delete a value from the tree
+    TreeNode* remove(TreeNode* node, double value) {
+        if (node == nullptr) {
+            return nullptr; // Value not found
+        }
+        if (value < node->value) {
+            node->left = remove(node->left, value); // Delete from the left subtree
+        } else if (value > node->value) {
+            node->right = remove(node->right, value); // Delete from the right subtree
+        } else {
+            // Node with only one child or no child
+            if (node->left == nullptr) {
+                TreeNode* temp = node->right;
+                delete node;
+                return temp;
+            } else if (node->right == nullptr) {
+                TreeNode* temp = node->left;
+                delete node;
+                return temp;
             }
+
+            // Node with two children: Get the inorder successor (smallest in the right subtree)
+            TreeNode* temp = findMin(node->right);
+            node->value = temp->value; // Copy the inorder successor's value to this node
+            node->right = remove(node->right, temp->value); // Delete the inorder successor
         }
-
-        if (!root) return root; // If the tree had only one node.
-
-        // Update the height of the current node.
-        root->height = 1 + max(getHeight(root->left), getHeight(root->right));
-
-        // Get the balance factor to check if the node is unbalanced.
-        int balance = getBalanceFactor(root);
-
-        // Perform rotations to balance the tree.
-        if (balance > 1 && getBalanceFactor(root->left) >= 0)
-            return rotateRight(root);
-        if (balance > 1 && getBalanceFactor(root->left) < 0) {
-            root->left = rotateLeft(root->left);
-            return rotateRight(root);
-        }
-        if (balance < -1 && getBalanceFactor(root->right) <= 0)
-            return rotateLeft(root);
-        if (balance < -1 && getBalanceFactor(root->right) > 0) {
-            root->right = rotateRight(root->right);
-            return rotateLeft(root);
-        }
-
-        return root; // Return the updated root.
+        return node;
     }
 
-    // Recursive function to search for a key in the AVL Tree.
-    bool search(Node* node, double key) {
-        if (!node) return false; // Base case: the tree is empty.
-        if (node->key == key) return true; // Key found.
-        if (key < node->key)
-            return search(node->left, key); // Search in the left subtree.
-        else
-            return search(node->right, key); // Search in the right subtree.
-    }
-
-    // Recursive function to perform an inorder traversal of the AVL Tree.
-    void inorder(Node* node) {
-        if (node) {
-            inorder(node->left); // Visit the left subtree.
-            cout << node->key << " "; // Print the key.
-            inorder(node->right); // Visit the right subtree.
+    // Helper function to print the tree in-order
+    void inOrder(TreeNode* node) {
+        if (node == nullptr) {
+            return;
         }
+        inOrder(node->left); // Visit left subtree
+        cout << node->value << " "; // Print node value
+        inOrder(node->right); // Visit right subtree
     }
 
 public:
-    // Constructor to initialize an empty AVL Tree.
-    AVLTree() : root(nullptr) {}
+    // Constructor to initialize the tree
+    BinarySearchTree() : root(nullptr) {}
 
-    // Public function to insert a key into the AVL Tree.
-    void insert(double key) {
-        root = insert(root, key);
+    // Method to insert a value into the tree
+    void insert(double value) {
+        root = insert(root, value);
     }
 
-    // Public function to delete a key from the AVL Tree.
-    void deleteKey(double key) {
-        root = deleteNode(root, key);
+    // Method to search for a value in the tree
+    bool search(double value) {
+        return search(root, value);
     }
 
-    // Public function to search for a key in the AVL Tree.
-    bool search(double key) {
-        return search(root, key);
+    // Method to delete a value from the tree
+    void remove(double value) {
+        root = remove(root, value);
     }
 
-    // Public function to display the AVL Tree using inorder traversal.
-    void display() {
-        inorder(root);
+    // Method to print the tree in-order
+    void printInOrder() {
+        inOrder(root);
         cout << endl;
     }
 };
 
+// Main function to test the BinarySearchTree class
 int main() {
-    AVLTree tree;
-    double arr[] = {10, 20, 30, 40, 50, 25};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    BinarySearchTree bst;
 
-    // Insert elements into the AVL Tree.
-    for (int i = 0; i < n; i++) {
-        tree.insert(arr[i]);
-    }
+    // Insert elements into the tree
+    bst.insert(5.5);
+    bst.insert(3.3);
+    bst.insert(7.7);
+    bst.insert(3.3); // Duplicate insertion
+    bst.insert(6.6);
 
-    // Display the AVL Tree.
-    cout << "Inorder traversal of the AVL tree: ";
-    tree.display();
+    // Print the tree in-order
+    cout << "In-order traversal: ";
+    bst.printInOrder();
 
-    // Delete a key from the AVL Tree.
-    tree.deleteKey(30);
-    cout << "After deleting 30: ";
-    tree.display();
+    // Search for elements
+    cout << "Search 3.3: " << (bst.search(3.3) ? "Found" : "Not Found") << endl;
+    cout << "Search 8.8: " << (bst.search(8.8) ? "Found" : "Not Found") << endl;
 
-    // Search for a key in the AVL Tree.
-    cout << "Search 50: " << (tree.search(50) ? "Found" : "Not Found") << endl;
+    // Delete an element
+    bst.remove(3.3);
+    cout << "After deleting 3.3, in-order traversal: ";
+    bst.printInOrder();
 
     return 0;
 }
