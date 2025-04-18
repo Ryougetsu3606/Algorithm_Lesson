@@ -101,7 +101,7 @@ def fft_parallel(x):
 if __name__ == "__main__":
     print("Device Name:", cuda.get_current_device().name)
     print("Device Compute Capability:", cuda.get_current_device().compute_capability)
-    sizes = [512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 8388608 * 2, 8388608 * 4, 8388608 * 8, 8388608 * 16]
+    sizes = [512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 8388608 * 2, 8388608 * 4, 8388608 * 8]
     num_experiments = 5
     print("Number of experiment:", num_experiments)
     for size in sizes:

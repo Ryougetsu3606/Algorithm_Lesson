@@ -1,6 +1,7 @@
 Number of threads: 16
 Number of experiments: 5
 Size            Time            Parallel Time           Speedup
+64              0.0008          0.0004                  2.000
 128             0.0062          0.0014                  4.429
 256             0.0386          0.0060                  6.433
 512             0.3128          0.0568                  5.507

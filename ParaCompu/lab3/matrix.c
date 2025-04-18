@@ -127,9 +127,9 @@ void matrixMultiplyParallel(int8_t **A, int8_t **B, int8_t **C, int size, int de
 }
 
 int main() {
-    int sizes[] = {128, 256, 512, 1024, 2048, 4096};
+    int sizes[] = {64, 128, 256, 512, 1024, 2048, 4096};
     int n = sizeof(sizes) / sizeof(sizes[0]);
-    int epo = 1;
+    int epo = 5;
 
     int numThreads = omp_get_max_threads();
     printf("Number of threads: %d\n", numThreads);

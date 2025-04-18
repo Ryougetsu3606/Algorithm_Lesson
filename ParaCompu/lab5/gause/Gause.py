@@ -86,7 +86,7 @@ def main():
     print("Image shape:", img.shape)
 
     # Define parameters for Gaussian kernel.
-    kernel_size = 127 # must be odd
+    kernel_size = 63 # must be odd
     sigma = 1.0 if kernel_size <= 7 else (0.3 * ((kernel_size - 1) * 0.5 - 1) + 0.8)
     kernel = gaussian_kernel(kernel_size, sigma)
     print("Kernel shape:", kernel.shape)
