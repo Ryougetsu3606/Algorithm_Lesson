@@ -1,0 +1,123 @@
+Device Name: b'NVIDIA GeForce GTX 1650'
+Device Compute Capability: (7, 5)
+Number of experiment: 1
+D:\Program Files\anaconda\Lib\site-packages\numba\cuda\dispatcher.py:536: NumbaPerformanceWarning: Grid size 1 will likely result in GPU under-utilization due to low occupancy.
+  warn(NumbaPerformanceWarning(msg))
+Serial FFT results verified
+Parallel FFT results verified
+Max error in serial FFT:0.0000
+Max error in parallel FFT:0.0000
+Size: 512, Avg Serial Time: 0.002016s, Avg Parallel Time: 0.555386s, Speedup: 0.00x
+D:\Program Files\anaconda\Lib\site-packages\numba\cuda\dispatcher.py:536: NumbaPerformanceWarning: Grid size 2 will likely result in GPU under-utilization due to low occupancy.
+  warn(NumbaPerformanceWarning(msg))
+Serial FFT results verified
+Parallel FFT results verified
+Max error in serial FFT:0.0000
+Max error in parallel FFT:0.0000
+Size: 1024, Avg Serial Time: 0.004019s, Avg Parallel Time: 0.002897s, Speedup: 1.39x
+D:\Program Files\anaconda\Lib\site-packages\numba\cuda\dispatcher.py:536: NumbaPerformanceWarning: Grid size 4 will likely result in GPU under-utilization due to low occupancy.
+  warn(NumbaPerformanceWarning(msg))
+Serial FFT results verified
+Parallel FFT results verified
+Max error in serial FFT:0.0000
+Max error in parallel FFT:0.0000
+Size: 2048, Avg Serial Time: 0.009001s, Avg Parallel Time: 0.004961s, Speedup: 1.81x
+D:\Program Files\anaconda\Lib\site-packages\numba\cuda\dispatcher.py:536: NumbaPerformanceWarning: Grid size 8 will likely result in GPU under-utilization due to low occupancy.
+  warn(NumbaPerformanceWarning(msg))
+Serial FFT results verified
+Parallel FFT results verified
+Max error in serial FFT:0.0000
+Max error in parallel FFT:0.0001
+Size: 4096, Avg Serial Time: 0.019973s, Avg Parallel Time: 0.006954s, Speedup: 2.87x
+D:\Program Files\anaconda\Lib\site-packages\numba\cuda\dispatcher.py:536: NumbaPerformanceWarning: Grid size 16 will likely result in GPU under-utilization due to 
+low occupancy.
+  warn(NumbaPerformanceWarning(msg))
+Serial FFT results verified
+Parallel FFT results verified
+Max error in serial FFT:0.0000
+Max error in parallel FFT:0.0004
+Size: 8192, Avg Serial Time: 0.041917s, Avg Parallel Time: 0.011618s, Speedup: 3.61x
+D:\Program Files\anaconda\Lib\site-packages\numba\cuda\dispatcher.py:536: NumbaPerformanceWarning: Grid size 32 will likely result in GPU under-utilization due to 
+low occupancy.
+  warn(NumbaPerformanceWarning(msg))
+Serial FFT results verified
+Parallel FFT results verified
+Max error in serial FFT:0.0000
+Max error in parallel FFT:0.0004
+Size: 16384, Avg Serial Time: 0.088426s, Avg Parallel Time: 0.020916s, Speedup: 4.23x
+D:\Program Files\anaconda\Lib\site-packages\numba\cuda\dispatcher.py:536: NumbaPerformanceWarning: Grid size 64 will likely result in GPU under-utilization due to 
+low occupancy.
+  warn(NumbaPerformanceWarning(msg))
+Serial FFT results verified
+Parallel FFT results verified
+Max error in serial FFT:0.0000
+Max error in parallel FFT:0.0009
+Size: 32768, Avg Serial Time: 0.188495s, Avg Parallel Time: 0.039294s, Speedup: 4.80x
+Serial FFT results verified
+Parallel FFT results verified
+Max error in serial FFT:0.0000
+Max error in parallel FFT:0.0010
+Size: 65536, Avg Serial Time: 0.392033s, Avg Parallel Time: 0.070811s, Speedup: 5.54x
+Serial FFT results verified
+Parallel FFT results verified
+Max error in serial FFT:0.0000
+Max error in parallel FFT:0.0068
+Size: 131072, Avg Serial Time: 0.822616s, Avg Parallel Time: 0.144587s, Speedup: 5.69x
+Serial FFT results verified
+Parallel FFT results verified
+Max error in serial FFT:0.0000
+Max error in parallel FFT:0.0067
+Size: 262144, Avg Serial Time: 1.746197s, Avg Parallel Time: 0.293833s, Speedup: 5.94x
+Serial FFT results verified
+Parallel FFT results mismatch
+Max error in serial FFT:0.0000
+Max error in parallel FFT:0.0160
+Size: 524288, Avg Serial Time: 3.708164s, Avg Parallel Time: 0.690742s, Speedup: 5.37x
+Serial FFT results verified
+Parallel FFT results verified
+Max error in serial FFT:0.0000
+Max error in parallel FFT:0.0159
+Size: 1048576, Avg Serial Time: 7.568177s, Avg Parallel Time: 1.355876s, Speedup: 5.58x
+Serial FFT results verified
+Parallel FFT results mismatch
+Max error in serial FFT:0.0000
+Max error in parallel FFT:0.0470
+Size: 2097152, Avg Serial Time: 15.622967s, Avg Parallel Time: 2.632039s, Speedup: 5.94x
+Serial FFT results verified
+Parallel FFT results mismatch
+Max error in serial FFT:0.0000
+Max error in parallel FFT:0.1111
+Size: 4194304, Avg Serial Time: 32.444566s, Avg Parallel Time: 4.952966s, Speedup: 6.55x
+Serial FFT results verified
+Parallel FFT results mismatch
+Max error in serial FFT:0.0000
+Max error in parallel FFT:0.1469
+Size: 8388608, Avg Serial Time: 67.308443s, Avg Parallel Time: 9.669298s, Speedup: 6.96x
+
+Device Name: b'NVIDIA GeForce GTX 1650'
+Device Compute Capability: (7, 5)
+Number of experiment: 5
+D:\Program Files\anaconda\Lib\site-packages\numba\cuda\dispatcher.py:536: NumbaPerformanceWarning: Grid size 1 will likely result in GPU under-utilization due to low occupancy.
+  warn(NumbaPerformanceWarning(msg))
+Size: 512, Avg Serial Time: 0.002010s, Avg Parallel Time: 0.114390s, Speedup: 0.02x, Max Serial Error: 0.000000, Max Parallel Error: 0.000014
+D:\Program Files\anaconda\Lib\site-packages\numba\cuda\dispatcher.py:536: NumbaPerformanceWarning: Grid size 1 will likely result in GPU under-utilization due to low occupancy.
+  warn(NumbaPerformanceWarning(msg))
+Size: 1024, Avg Serial Time: 0.004313s, Avg Parallel Time: 0.002652s, Speedup: 1.63x, Max Serial Error: 0.000000, Max Parallel Error: 0.000029
+D:\Program Files\anaconda\Lib\site-packages\numba\cuda\dispatcher.py:536: NumbaPerformanceWarning: Grid size 1 will likely result in GPU under-utilization due to low occupancy.
+  warn(NumbaPerformanceWarning(msg))
+Size: 2048, Avg Serial Time: 0.009098s, Avg Parallel Time: 0.003551s, Speedup: 2.56x, Max Serial Error: 0.000000, Max Parallel Error: 0.000066
+Size: 4096, Avg Serial Time: 0.019467s, Avg Parallel Time: 0.006172s, Speedup: 3.15x, Max Serial Error: 0.000000, Max Parallel Error: 0.000122
+Size: 8192, Avg Serial Time: 0.042020s, Avg Parallel Time: 0.010563s, Speedup: 3.98x, Max Serial Error: 0.000000, Max Parallel Error: 0.000229
+Size: 16384, Avg Serial Time: 0.087538s, Avg Parallel Time: 0.019342s, Speedup: 4.53x, Max Serial Error: 0.000000, Max Parallel Error: 0.000544
+Size: 32768, Avg Serial Time: 0.187124s, Avg Parallel Time: 0.037509s, Speedup: 4.99x, Max Serial Error: 0.000000, Max Parallel Error: 0.000991
+Size: 65536, Avg Serial Time: 0.395031s, Avg Parallel Time: 0.075043s, Speedup: 5.26x, Max Serial Error: 0.000000, Max Parallel Error: 0.001865
+Size: 131072, Avg Serial Time: 0.824916s, Avg Parallel Time: 0.175560s, Speedup: 4.70x, Max Serial Error: 0.000000, Max Parallel Error: 0.003226
+Size: 262144, Avg Serial Time: 1.707512s, Avg Parallel Time: 0.365337s, Speedup: 4.67x, Max Serial Error: 0.000000, Max Parallel Error: 0.007309
+Size: 524288, Avg Serial Time: 3.611633s, Avg Parallel Time: 0.7728 58s, Speedup: 4.67x, Max Serial Error: 0.000000, Max Parallel Error: 0.020100
+Size: 1048576, Avg Serial Time: 7.495300s, Avg Parallel Time: 1.408958s, Speedup: 5.32x, Max Serial Error: 0.000000, Max Parallel Error: 0.036753
+Size: 2097152, Avg Serial Time: 15.667455s, Avg Parallel Time: 2.634372s, Speedup: 5.95x, Max Serial Error: 0.000000, Max Parallel Error: 0.060420
+Size: 4194304, Avg Serial Time: 32.733135s, Avg Parallel Time: 4.998483s, Speedup: 6.55x, Max Serial Error: 0.000000, Max Parallel Error: 0.105924
+Size: 8388608, Avg Serial Time: 67.968032s, Avg Parallel Time: 9.738538s, Speedup: 6.98x, Max Serial Error: 0.000000, Max Parallel Error: 0.206251
+Size: 16777216, Avg Serial Time: 141.175618s, Avg Parallel Time: 19.658193s, Speedup: 7.18x, Max Serial Error: 0.000002, Max Parallel Error: 0.517074
+Size: 33554432, Avg Serial Time: 292.191586s, Avg Parallel Time: 38.669719s, Speedup: 7.56x, Max Serial Error: 0.000003, Max Parallel Error: 0.818033
+Size: 67108864, Avg Serial Time: 610.511757s, Avg Parallel Time: 79.025048s, Speedup: 7.73x, Max Serial Error: 0.000014, Max Parallel Error: 1.808581

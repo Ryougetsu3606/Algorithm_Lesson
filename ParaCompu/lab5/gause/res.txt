@@ -1,0 +1,25 @@
+ParaCompu/canny/input/gen.png
+Image shape: (2160, 3840, 3)
+Kernel shape: (31, 31)
+standard deviation: 5.0
+Convolution runtime Serialy: 209.3929 seconds
+Convolution runtime Parallely: 1.9232 seconds
+Speedup ratio: 108.8753x
+Convolution runtime via cv2.filter2D: 0.25109863 seconds
+Serial vs Parallel difference statistics:
+Mean difference:0.0000
+Parallel vs cv2.filter2D difference statistics:
+Mean difference:{np.mean(diff_parallel_cv2):.4f}
+
+ParaCompu/canny/input/gen.png
+Image shape: (2160, 3840, 3)
+Kernel shape: (127, 127)
+standard deviation: 19.4
+Convolution runtime Serialy: 756.3321 seconds
+Convolution runtime Parallely: 17.7771 seconds
+Speedup ratio: 42.5453x
+Convolution runtime via cv2.filter2D: 0.34069252 seconds
+Serial vs Parallel difference statistics:
+Mean difference:0.0000
+Parallel vs cv2.filter2D difference statistics:
+Mean difference:1.9370
