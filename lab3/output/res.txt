@@ -1,0 +1,527 @@
+Seed: 114, Number of items: 5, Knapsack capacity: 60
+Divide and Conquer
+Optimal value: 174
+Time taken: 2.35e-05 seconds
+
+Dynamic Programming
+Optimal value: 174
+Selected items (0-based index): 3 1 0
+Time taken: 2.1e-05 seconds
+
+Greedy Algorithm
+Optimal value: 174
+Selected items (0-based index): 1 3 0
+Time taken: 1.73e-05 seconds
+
+Backtracking
+Optimal value: 174
+Selected items (0-based index): 0 1 3
+Time taken: 1.61e-05 seconds
+
+Branch and Bound
+Optimal value: 174
+Selected items (0-based index): 1 3 0
+Time taken: 2.09e-05 seconds
+
+Seed: 114, Number of items: 10, Knapsack capacity: 154
+Divide and Conquer
+Optimal value: 461
+Time taken: 0.0002532 seconds
+
+Dynamic Programming
+Optimal value: 461
+Selected items (0-based index): 9 8 7 6 4 3 2 1 0
+Time taken: 6.13e-05 seconds
+
+Greedy Algorithm
+Optimal value: 461
+Selected items (0-based index): 1 8 4 7 2 9 6 0 3
+Time taken: 6.2e-06 seconds
+
+Backtracking
+Optimal value: 461
+Selected items (0-based index): 0 1 2 3 4 6 7 8 9
+Time taken: 3.26e-05 seconds
+
+Branch and Bound
+Optimal value: 461
+Selected items (0-based index): 1 8 4 7 2 9 6 0 3
+Time taken: 4.21e-05 seconds
+
+Seed: 114, Number of items: 20, Knapsack capacity: 314
+Divide and Conquer
+Optimal value: 1026
+Time taken: 0.129771 seconds
+
+Dynamic Programming
+Optimal value: 1026
+Time taken: 9.79e-05 seconds
+
+Greedy Algorithm
+Optimal value: 999
+Time taken: 6e-06 seconds
+
+Backtracking
+Optimal value: 1026
+Time taken: 0.0006632 seconds
+
+Branch and Bound
+Optimal value: 1026
+Time taken: 0.0014004 seconds
+
+Seed: 114, Number of items: 30, Knapsack capacity: 414
+Divide and Conquer
+Optimal value: 1243
+Time taken: 10 seconds
+
+Dynamic Programming
+Optimal value: 1483
+Time taken: 0.0001759 seconds
+
+Greedy Algorithm
+Optimal value: 1470
+Time taken: 9e-06 seconds
+
+Backtracking
+Optimal value: 1483
+Time taken: 0.0086035 seconds
+
+Branch and Bound
+Optimal value: 1483
+Time taken: 0.0066328 seconds
+
+Seed: 114, Number of items: 40, Knapsack capacity: 500
+Divide and Conquer
+Optimal value: 1645
+Time taken: 10 seconds
+
+Dynamic Programming
+Optimal value: 1918
+Time taken: 0.0002799 seconds
+
+Greedy Algorithm
+Optimal value: 1903
+Time taken: 1.06e-05 seconds
+
+Backtracking
+Optimal value: 1918
+Time taken: 10 seconds
+
+Branch and Bound
+Optimal value: 1811
+Time taken: 10 seconds
+
+Seed: 114, Number of items: 50, Knapsack capacity: 536
+Divide and Conquer
+Optimal value: 1140
+Time taken: 10.0001 seconds
+
+Dynamic Programming
+Optimal value: 1899
+Time taken: 0.0005661 seconds
+
+Greedy Algorithm
+Optimal value: 1893
+Time taken: 1.74e-05 seconds
+
+Backtracking
+Optimal value: 1667
+Time taken: 10 seconds
+
+Branch and Bound
+Optimal value: 1818
+Time taken: 0.0015266 seconds
+
+Seed: 114, Number of items: 100, Knapsack capacity: 1770
+Divide and Conquer
+Optimal value: 1161
+Time taken: 10 seconds
+
+Dynamic Programming
+Optimal value: 4668
+Time taken: 0.0050703 seconds
+
+Greedy Algorithm
+Optimal value: 4660
+Time taken: 3.35e-05 seconds
+
+Backtracking
+Optimal value: 4187
+Time taken: 10 seconds
+
+Branch and Bound
+Optimal value: 4566
+Time taken: 10.0001 seconds
+
+Seed: 114, Number of items: 200, Knapsack capacity: 3627
+Divide and Conquer
+Optimal value: 1521
+Time taken: 10 seconds
+
+Dynamic Programming
+Optimal value: 10242
+Time taken: 0.0187149 seconds
+
+Greedy Algorithm
+Optimal value: 10226
+Time taken: 6.84e-05 seconds
+
+Backtracking
+Optimal value: 9230
+Time taken: 10 seconds
+
+Branch and Bound
+Optimal value: 7336
+Time taken: 10 seconds
+
+Seed: 514, Number of items: 5, Knapsack capacity: 67
+Divide and Conquer
+Optimal value: 177
+Time taken: 1.29e-05 seconds
+
+Dynamic Programming
+Optimal value: 177
+Selected items (0-based index): 2 0
+Time taken: 1.68e-05 seconds
+
+Greedy Algorithm
+Optimal value: 173
+Selected items (0-based index): 3 2 1
+Time taken: 8e-06 seconds
+
+Backtracking
+Optimal value: 177
+Selected items (0-based index): 0 2
+Time taken: 2.28e-05 seconds
+
+Branch and Bound
+Optimal value: 177
+Selected items (0-based index): 2 0
+Time taken: 6.89e-05 seconds
+
+Seed: 514, Number of items: 10, Knapsack capacity: 172
+Divide and Conquer
+Optimal value: 516
+Time taken: 0.0001892 seconds
+
+Dynamic Programming
+Optimal value: 516
+Selected items (0-based index): 8 5 4 3 2 1 0
+Time taken: 4.22e-05 seconds
+
+Greedy Algorithm
+Optimal value: 508
+Selected items (0-based index): 0 2 4 8 7 5 1
+Time taken: 7.4e-06 seconds
+
+Backtracking
+Optimal value: 516
+Selected items (0-based index): 0 1 2 3 4 5 8
+Time taken: 3.9e-05 seconds
+
+Branch and Bound
+Optimal value: 516
+Selected items (0-based index): 0 2 4 8 5 1 3
+Time taken: 9.13e-05 seconds
+
+Seed: 514, Number of items: 20, Knapsack capacity: 367
+Divide and Conquer
+Optimal value: 794
+Time taken: 0.192148 seconds
+
+Dynamic Programming
+Optimal value: 794
+Time taken: 0.0002148 seconds
+
+Greedy Algorithm
+Optimal value: 794
+Time taken: 1.23e-05 seconds
+
+Backtracking
+Optimal value: 794
+Time taken: 0.000143 seconds
+
+Branch and Bound
+Optimal value: 794
+Time taken: 0.0024918 seconds
+
+Seed: 514, Number of items: 30, Knapsack capacity: 522
+Divide and Conquer
+Optimal value: 1526
+Time taken: 10 seconds
+
+Dynamic Programming
+Optimal value: 1715
+Time taken: 0.0004417 seconds
+
+Greedy Algorithm
+Optimal value: 1713
+Time taken: 1.54e-05 seconds
+
+Backtracking
+Optimal value: 1715
+Time taken: 0.0018568 seconds
+
+Branch and Bound
+Optimal value: 1715
+Time taken: 2.16034 seconds
+
+Seed: 514, Number of items: 40, Knapsack capacity: 439
+Divide and Conquer
+Optimal value: 1387
+Time taken: 10 seconds
+
+Dynamic Programming
+Optimal value: 1694
+Time taken: 0.0004384 seconds
+
+Greedy Algorithm
+Optimal value: 1676
+Time taken: 2.08e-05 seconds
+
+Backtracking
+Optimal value: 1629
+Time taken: 10 seconds
+
+Branch and Bound
+Optimal value: 1647
+Time taken: 0.0124326 seconds
+
+Seed: 514, Number of items: 50, Knapsack capacity: 987
+Divide and Conquer
+Optimal value: 1392
+Time taken: 10 seconds
+
+Dynamic Programming
+Optimal value: 2766
+Time taken: 0.0013193 seconds
+
+Greedy Algorithm
+Optimal value: 2766
+Time taken: 2.37e-05 seconds
+
+Backtracking
+Optimal value: 2766
+Time taken: 0.289736 seconds
+
+Branch and Bound
+Optimal value: 2700
+Time taken: 10 seconds
+
+Seed: 514, Number of items: 100, Knapsack capacity: 1700
+Divide and Conquer
+Optimal value: 1474
+Time taken: 10 seconds
+
+Dynamic Programming
+Optimal value: 5587
+Time taken: 0.0051173 seconds
+
+Greedy Algorithm
+Optimal value: 5579
+Time taken: 4.86e-05 seconds
+
+Backtracking
+Optimal value: 4803
+Time taken: 10 seconds
+
+Branch and Bound
+Optimal value: 3778
+Time taken: 10 seconds
+
+Seed: 514, Number of items: 200, Knapsack capacity: 3574
+Divide and Conquer
+Optimal value: 1315
+Time taken: 10 seconds
+
+Dynamic Programming
+Optimal value: 10266
+Time taken: 0.0199598 seconds
+
+Greedy Algorithm
+Optimal value: 10266
+Time taken: 8.86e-05 seconds
+
+Backtracking
+Optimal value: 9371
+Time taken: 10 seconds
+
+Branch and Bound
+Optimal value: 8749
+Time taken: 10 seconds
+
+Seed: 42, Number of items: 5, Knapsack capacity: 75
+Divide and Conquer
+Optimal value: 171
+Time taken: 8.4e-06 seconds
+
+Dynamic Programming
+Optimal value: 171
+Selected items (0-based index): 3 2 1
+Time taken: 1.51e-05 seconds
+
+Greedy Algorithm
+Optimal value: 171
+Selected items (0-based index): 1 3 2
+Time taken: 3.4e-06 seconds
+
+Backtracking
+Optimal value: 171
+Selected items (0-based index): 1 2 3
+Time taken: 1.66e-05 seconds
+
+Branch and Bound
+Optimal value: 171
+Selected items (0-based index): 1 3 2
+Time taken: 7.45e-05 seconds
+
+Seed: 42, Number of items: 10, Knapsack capacity: 150
+Divide and Conquer
+Optimal value: 476
+Time taken: 0.0003369 seconds
+
+Dynamic Programming
+Optimal value: 476
+Selected items (0-based index): 9 8 7 6 5 4 2
+Time taken: 6.25e-05 seconds
+
+Greedy Algorithm
+Optimal value: 459
+Selected items (0-based index): 8 7 1 5 2 4 6 0
+Time taken: 1e-05 seconds
+
+Backtracking
+Optimal value: 476
+Selected items (0-based index): 2 4 5 6 7 8 9
+Time taken: 3.17e-05 seconds
+
+Branch and Bound
+Optimal value: 476
+Selected items (0-based index): 8 7 5 2 4 6 9
+Time taken: 0.0003706 seconds
+
+Seed: 42, Number of items: 20, Knapsack capacity: 288
+Divide and Conquer
+Optimal value: 941
+Time taken: 0.289675 seconds
+
+Dynamic Programming
+Optimal value: 941
+Time taken: 0.0001451 seconds
+
+Greedy Algorithm
+Optimal value: 936
+Time taken: 1.09e-05 seconds
+
+Backtracking
+Optimal value: 941
+Time taken: 0.0021555 seconds
+
+Branch and Bound
+Optimal value: 941
+Time taken: 0.0006133 seconds
+
+Seed: 42, Number of items: 30, Knapsack capacity: 367
+Divide and Conquer
+Optimal value: 1035
+Time taken: 10.0002 seconds
+
+Dynamic Programming
+Optimal value: 1105
+Time taken: 0.0003666 seconds
+
+Greedy Algorithm
+Optimal value: 1092
+Time taken: 5.39e-05 seconds
+
+Backtracking
+Optimal value: 1105
+Time taken: 0.710619 seconds
+
+Branch and Bound
+Optimal value: 1105
+Time taken: 0.0002135 seconds
+
+Seed: 42, Number of items: 40, Knapsack capacity: 677
+Divide and Conquer
+Optimal value: 1534
+Time taken: 10 seconds
+
+Dynamic Programming
+Optimal value: 2239
+Time taken: 0.0007341 seconds
+
+Greedy Algorithm
+Optimal value: 2239
+Time taken: 1.88e-05 seconds
+
+Backtracking
+Optimal value: 2239
+Time taken: 0.0272805 seconds
+
+Branch and Bound
+Optimal value: 2234
+Time taken: 1.17999 seconds
+
+Seed: 42, Number of items: 50, Knapsack capacity: 885
+Divide and Conquer
+Optimal value: 1580
+Time taken: 10 seconds
+
+Dynamic Programming
+Optimal value: 2774
+Time taken: 0.0012013 seconds
+
+Greedy Algorithm
+Optimal value: 2774
+Time taken: 1.97e-05 seconds
+
+Backtracking
+Optimal value: 2774
+Time taken: 0.0627098 seconds
+
+Branch and Bound
+Optimal value: 2755
+Time taken: 10 seconds
+
+Seed: 42, Number of items: 100, Knapsack capacity: 1957
+Divide and Conquer
+Optimal value: 1551
+Time taken: 10 seconds
+
+Dynamic Programming
+Optimal value: 5325
+Time taken: 0.0111522 seconds
+
+Greedy Algorithm
+Optimal value: 5324
+Time taken: 5.75e-05 seconds
+
+Backtracking
+Optimal value: 5230
+Time taken: 10 seconds
+
+Branch and Bound
+Optimal value: 4477
+Time taken: 10 seconds
+
+Seed: 42, Number of items: 200, Knapsack capacity: 2095
+Divide and Conquer
+Optimal value: 1525
+Time taken: 10 seconds
+
+Dynamic Programming
+Optimal value: 7844
+Time taken: 0.0113074 seconds
+
+Greedy Algorithm
+Optimal value: 7843
+Time taken: 9.86e-05 seconds
+
+Backtracking
+Optimal value: 5054
+Time taken: 10 seconds
+
+Branch and Bound
+Optimal value: 6733
+Time taken: 10 seconds
